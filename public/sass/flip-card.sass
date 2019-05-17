@@ -1,0 +1,65 @@
+.flip-card 
+  background-color: transparent
+  width: 300px
+  height: 100%
+  border: 1px solid #f1f1f1
+  perspective: 1000px
+
+.flip-card-inner 
+  position: relative
+  width: 100%
+  height: 100%
+  text-align: center
+  transition: transform 0.8s
+  transform-style: preserve-3d
+
+.flip-card:hover .flip-card-inner 
+  transform: rotateY(180deg)
+
+.flip-card-front, .flip-card-back 
+  position: absolute
+  margin: auto
+  width: 100%
+  height: 100%
+  backface-visibility: hidden
+
+.flip-card-front 
+  background-color: #000
+  color: black
+
+.flip-card-back 
+  background-color: #000
+  color: white
+  transform: rotateY(180deg)
+
+h1 
+  font-size: 72px
+  background: -webkit-linear-gradient(#eee, #333)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  //-webkit-box-reflect: below 1px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.4)))//reflection
+  //text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4)//shadow
+
+.real 
+    font-size: 72px
+    color: white
+    margin: 0
+
+.refl 
+    font-size:30px
+    color: white
+    margin: 0
+    -moz-transform: scaleY(-1)
+       -o-transform: scaleY(-1)
+       -webkit-transform: scaleY(-1)
+       transform: scaleY(-1)
+    -webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(20%, transparent), to(rgba(0, 0, 0, 0.4)))
+
+.para_div 
+    display:inline-block
+    background-color: black
+    padding: 20px 40px
+    border-radius:10px
+
+  
+
