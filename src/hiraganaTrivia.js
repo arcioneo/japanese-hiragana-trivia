@@ -71,7 +71,7 @@ export default function HiraganaTrivia() {
                 <label>Hiragana to Romaji</label>
             </div>
             <div className="linksToOtherApps">
-                <a href="http://japanese-hiragana-trivia.herokuapp.com/">Click to study Hiragana...</a>
+                <a href="http://japanese-hours.herokuapp.com/">Click to study Japanese hours...</a>
                 <p />
                 <a href="http://japanese-numbers-trivia.herokuapp.com/">Click to study Japanese Numbers...</a>
             </div>
