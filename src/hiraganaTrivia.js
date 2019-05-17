@@ -6,7 +6,7 @@ import './hiraganaTrivia.css'
 export default function HiraganaTrivia() {
     const refHiraganaRadio = useRef();
     const initAlphabet = useRef(false);
-    
+
     const [newKey, newValue] = getKey()
     const [key, setKey] = useState(newKey)
     const [value, setValue] = useState(newValue)
@@ -16,7 +16,7 @@ export default function HiraganaTrivia() {
         setSourceArray(true)
         getNewValues()
         initAlphabet.current = true;
-      }
+    }
 
     function clickedButton(e) {
         const clazz = e.target.className
@@ -69,6 +69,11 @@ export default function HiraganaTrivia() {
                 <label>Romaji to hiragana</label>
                 <input type="radio" name="demo" value="true" id="HtR" checked={!isChecked} onChange={switchAlphabet} />
                 <label>Hiragana to Romaji</label>
+            </div>
+            <div className="linksToOtherApps">
+                <a href="http://japanese-hiragana-trivia.herokuapp.com/">Click to study Hiragana...</a>
+                <p />
+                <a href="http://japanese-numbers-trivia.herokuapp.com/">Click to study Japanese Numbers...</a>
             </div>
         </div>
     )

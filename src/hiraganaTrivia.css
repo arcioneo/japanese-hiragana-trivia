@@ -168,4 +168,13 @@
   filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#36780f, endColorstr=#005900)";
 }
 
+.linksToOtherApps {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  border: 0px solid;
+  text-align: right;
+  font-size: 15px;
+}
+
 /*# sourceMappingURL=hiraganaTrivia.css.map */
