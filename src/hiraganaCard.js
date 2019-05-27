@@ -4,7 +4,7 @@ import './flip-card.css'
 export default function HiraganaCard(props) {
 
     return (
-        <div className="flip-card">
+        <div className="flip-card" onclick="void(0)">
             <div className="flip-card-inner">
                 <div className="flip-card-front">
                     <div className="para_div">
